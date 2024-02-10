@@ -4,6 +4,7 @@ declare global {
 	namespace App {
         interface Platform {
           env: {
+            SVELTELO_DB: D1Database;
             COUNTER: DurableObjectNamespace;
           };
           context: {
