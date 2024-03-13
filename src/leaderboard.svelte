@@ -8,7 +8,8 @@
     let ret: Set<string> = new Set();
     const date_now = Date.now();
     for (const m of matches) {
-      if (date_now - m.created_at < 1209600000 * 2) { // 4 weeks in ms
+      // if (date_now - m.created_at < 1209600000 * 2) { // 4 weeks in ms
+      if (date_now - m.created_at < 99999999999999) { // 4 weeks in ms
         ret.add(m.p1_id);
         ret.add(m.p2_id);
       }

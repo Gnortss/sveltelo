@@ -1,4 +1,6 @@
-async function callAPI(method : string, payload : string) {
+import type { Player, Match } from "$lib";
+
+export async function callAPI(method : string, payload : string) {
   return fetch(method, {
       method: "POST",
       headers: {
